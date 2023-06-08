@@ -18,6 +18,8 @@ import aero from './exp/aerologo.gif'
 import github from './social/github.svg'
 import linkedin from './social/linkedin.svg'
 
+import profilepic from './Profilepic.jpg'
+
 export {
     css,
     git,
@@ -37,6 +39,7 @@ export {
     aero,
 
     github,
-    linkedin
+    linkedin,
+    profilepic
   };
   

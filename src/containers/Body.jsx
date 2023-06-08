@@ -1,6 +1,6 @@
 import React, {useRef,  useEffect, useState} from 'react'
 import {Aboutjson, Experience} from '../components'
-import {Skills, Contact, Header} from '../containers'
+import {Skills, Contact, Header, Projects} from '../containers'
 import {motion, useViewportScroll, useSpring, useTransform} from "framer-motion";
 
 const Body = () => {
@@ -53,7 +53,7 @@ const Body = () => {
       <Header />
       <Aboutjson />
       <Skills />
-      {/* <Projects /> */}
+      <Projects />
       <Contact />
     </div>
     )

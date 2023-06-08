@@ -31,12 +31,12 @@ const Experience = () => {
       <motion.div 
         ref={ref}
         variants={{
-          initial:{ x: 400, opacity: 0 },
+          initial:{ x: 800, opacity: 0 },
           visible:{ x: 0, opacity: 1 },
         }}
         initial='initial'
         animate={mainControls}
-        transition={{ease:'easeInOut', duration: 1 }}
+        transition={{ease:'easeInOut', duration: 1.3 }}
 
         className=' flex flex-col h-auto  text-white bg-opacity-20 backdrop-filter backdrop-blur-lg bg-gray-300 p-4 '>
           <div className='pl-10 pt-5'>

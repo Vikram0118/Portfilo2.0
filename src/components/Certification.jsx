@@ -30,19 +30,19 @@ const Certification = () => {
       <motion.div 
         ref={ref}
         variants={{
-          initial:{ x: 400, opacity: 0 },
+          initial:{ x: -800, opacity: 0 },
           visible:{ x: 0, opacity: 1 },
         }}
         initial='initial'
         animate={mainControls}
-        transition={{ease:'easeInOut', duration: 1 }}
+        transition={{ease:'easeInOut', duration: 1.3 }}
 
         className=' flex flex-col h-auto  text-white bg-opacity-20 backdrop-filter backdrop-blur-lg bg-gray-300 p-4 '>
           <div className='pl-10 pt-5'>
             <ul className="relative  border-gray-200 dark:border-gray-700"> 
                 {certifications.map((cert) => (
                     <li className="flex items-center justify-start gap-5 mb-5 ml-6">            
-                        <div className=" flex items-center justify-center w-20 h-20  ">
+                        <div className=" flex items-center justify-center w-24 h-20  ">
                             <img src={cert.icon} alt=""  className={`w-full h-full ${cert.icon == 'peerxp' ? 'p-3' : 'p-0'}`}/>
                         </div>
                         <div>

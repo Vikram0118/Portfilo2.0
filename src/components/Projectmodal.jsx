@@ -1,12 +1,10 @@
-import styles from "./projectmodal.module.scss";
 import { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
-// import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 
-export const ProjectModal = ({
+const Projectmodal = ({
   modalContent,
   projectLink,
   setIsOpen,
@@ -27,8 +25,8 @@ export const ProjectModal = ({
   }, [isOpen]);
 
   const content = (
-    <div className={styles.modal} onClick={() => setIsOpen(false)}>
-      <button className={styles.closeModalBtn}>
+    <div className='fixed top-0 left-0 right-0 z-50 h-[100vh] flex justify-center overflow-y-scroll px-20 py-5 backdrop-blur' onClick={() => setIsOpen(false)}>
+      <button className='absolute top-5 right-5 text-white'>
         <MdClose />
       </button>
 
@@ -36,28 +34,28 @@ export const ProjectModal = ({
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         onClick={(e) => e.stopPropagation()}
-        className={styles.modalCard}
+        className='w-full max-w-4xl h-fit overflow-hidden cursor-auto rounded-3xl bg-slate-400'
       >
         <img
-          className={styles.modalImage}
+          className='h-96 w-full'
           src={imgSrc}
           alt={`An image of the ${title} project.`}
         />
-        <div className={styles.modalContent}>
-          <h4>{title}</h4>
-          <div className={styles.modalTech}>{tech.join(" - ")}</div>
+        <div className='p-10'>
+          <h4 className="text-3xl">{title}</h4>
+          <div className='flex flex-wrap gap-5 text-lg'>{tech.join(" - ")}</div>
 
-          <div className={styles.suppliedContent}>{modalContent}</div>
+          <div className='flex flex-col gap-5'>{modalContent}</div>
 
-          <div className={styles.modalFooter}>
-            <p className={styles.linksText}>
+          <div className='mt-10'>
+            <p className='font-bold'>
               Project Links<span>.</span>
             </p>
-            <div className={styles.links}>
-              <a target="_blank" rel="nofollow" href={code}>
+            <div className='flex items-center gap-5'>
+              <a target="_blank" rel="nofollow" href={code} className="flex gap-2 items-center">
                 <AiFillGithub /> source code
               </a>
-              <a target="_blank" rel="nofollow" href={projectLink}>
+              <a target="_blank" rel="nofollow" href={projectLink} className="flex gap-2 items-center">
                 <AiOutlineExport /> live project
               </a>
             </div>
@@ -71,3 +69,5 @@ export const ProjectModal = ({
 
   return ReactDOM.createPortal(content, document.getElementById("root"));
 };
+
+export default Projectmodal
