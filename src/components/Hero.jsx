@@ -57,11 +57,11 @@ const Hero = () => {
           animate={{y:0,x:0,opacity: 1 }}
           transition={{ duration:2.5 }}
           className='relative overflow-hidden'>
-          <img src={Blob} alt="blob" className='z-10 w-[30vw]' />
+          <img src={Blob} alt="blob" className='z-10 w-[30vw] pointer-events-none' />
           <img 
             src={Profilepic} 
             alt="photo" 
-            className='z-20 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60'
+            className='z-20 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 pointer-events-none'
           />
         </motion.div>
 
