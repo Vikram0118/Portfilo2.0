@@ -29,15 +29,23 @@ const Certification = () => {
 
       <motion.div 
         ref={ref}
-        variants={{
-          initial:{ x: -800, opacity: 0 },
-          visible:{ x: 0, opacity: 1 },
-        }}
-        initial='initial'
-        animate={mainControls}
-        transition={{ease:'easeInOut', duration: 1.3 }}
+        // variants={{
+        //   initial:{ x: -800, opacity: 0 },
+        //   visible:{ x: 0, opacity: 1 },
+        // }}
+        // initial='initial'
+        // animate={mainControls}
+        // transition={{ease:'easeInOut', duration: 1.3 }}
 
-        className=' flex flex-col h-auto  text-white bg-opacity-20 backdrop-filter backdrop-blur-lg bg-gray-300 p-4 '>
+        variants={{
+          hidden: { opacity: 0, y: 100 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.75 }}
+
+        className=' flex flex-col h-auto  text-white bg-opacity-10 backdrop-filter backdrop-blur-lg bg-gray-300 p-4 rounded-xl'>
           <div className='pl-10 pt-5'>
             <ul className="relative  border-gray-200 dark:border-gray-700"> 
                 {certifications.map((cert) => (

@@ -29,14 +29,23 @@ const Aboutjson = () => {
       </div>
       <motion.div 
         ref={ref}
+        // variants={{
+        //   initial:{ x: 400, opacity: 0 },
+        //   visible:{ x: 0, opacity: 1 },
+        // }}
+        // initial='initial'
+        // animate={mainControls}
+        // transition={{ease:'easeInOut', duration: 1 }}
+
         variants={{
-          initial:{ x: 400, opacity: 0 },
-          visible:{ x: 0, opacity: 1 },
+          hidden: { opacity: 0, y: 100 },
+          visible: { opacity: 1, y: 0 },
         }}
-        initial='initial'
+        initial="hidden"
         animate={mainControls}
-        transition={{ease:'easeInOut', duration: 1 }}
-        className=' flex flex-col h-auto  text-white bg-opacity-20 backdrop-filter backdrop-blur-lg bg-gray-300 p-4 '>
+        transition={{ duration: 0.75 }}
+
+        className=' flex flex-col h-auto  text-white bg-opacity-10 backdrop-filter backdrop-blur-lg bg-gray-300 p-4 rounded-xl '>
           <div className='flex flex-col gap-2 px-3 py-2 text-xl font-extralight'>
               <p>&#123;</p>
               <div className='flex flex-col gap-2 pl-10'>

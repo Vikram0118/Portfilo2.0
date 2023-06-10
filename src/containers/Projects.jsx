@@ -1,18 +1,15 @@
 import { Projectcard } from "../components";
 import {Reveal} from '../utils'
-// import {profilepic} from '../assets'
 import profilepic from '../assets/Profilepic.jpg';
 
 const Projects = () => {
   return (
-    <section className="max-w-5xl mx-auto" id="projects">
+    <section className="max-w-5xl mx-auto my-20" id="projects">
       <Reveal>
         <p className='text-5xl font-extrabold text-white py-2'>Projects<span className='text-yellow-300'>.</span></p>
       </Reveal>
-      {/* <img src={profilepic} alt="" className="w-20 h-20" /> */}
 
-
-      <div className='grid grid-cols-2 gap-12'>
+      <div className='grid grid-cols-2 gap-12 mt-10'>
         {projects.map((project) => {
           return <Projectcard key={project.title} {...project} />;
         })}
@@ -27,9 +24,21 @@ const projects = [
     imgSrc: profilepic,
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Flutter", "MUI", "Python", "FastAPI"],
-    description:
-      "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.",
+    tech: [
+      {
+        name: "react",
+        color: "text-yellow-300",
+      },
+      {
+        name: "mongodb",
+        color: "text-yellow-300",
+      },
+      {
+        name: "tailwind",
+        color: "text-yellow-300",
+      },
+    ],  
+    description: "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.",
     modalContent: (
       <>
         <p>
@@ -62,9 +71,21 @@ const projects = [
     imgSrc: profilepic,
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Node", "Express", "Postgres", "Kafka", "Redis"],
-    description:
-      "A social community for painters to connect with others in their community. I handle everything backend (50K monthly active users).",
+    tech: [
+      {
+        name: "react",
+        color: "text-yellow-300",
+      },
+      {
+        name: "mongodb",
+        color: "text-yellow-300",
+      },
+      {
+        name: "tailwind",
+        color: "text-yellow-300",
+      },
+    ],      
+    description:"A social community for painters to connect with others in their community. I handle everything backend (50K monthly active users).",
     modalContent: (
       <>
         <p>
@@ -100,9 +121,21 @@ const projects = [
     imgSrc: profilepic,
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["NextJS", "Java", "Spring", "AWS Aurora"],
-    description:
-      "Think Zapier but for paint. Built with a team of four college friends and scaled to > 1 billion requests per day. This was a fun one.",
+    tech: [
+      {
+        name: "react",
+        color: "text-yellow-300",
+      },
+      {
+        name: "mongodb",
+        color: "text-yellow-300",
+      },
+      {
+        name: "tailwind",
+        color: "text-yellow-300",
+      },
+    ],  
+    description:"Think Zapier but for paint. Built with a team of four college friends and scaled to > 1 billion requests per day. This was a fun one.",
     modalContent: (
       <>
         <p>
@@ -131,9 +164,21 @@ const projects = [
     imgSrc: profilepic,
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Python", "FastAPI", "SQLAlchemy"],
-    description:
-      "I couldn't think of another paint reference app, so here we are. I think you get the idea, right? Use your imagination 🌈",
+    tech: [
+      {
+        name: "react",
+        color: "text-yellow-300",
+      },
+      {
+        name: "mongodb",
+        color: "text-yellow-300",
+      },
+      {
+        name: "tailwind",
+        color: "text-yellow-300",
+      },
+    ],  
+    description:"I couldn't think of another paint reference app, so here we are. I think you get the idea, right? Use your imagination 🌈",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>

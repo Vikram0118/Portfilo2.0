@@ -48,15 +48,12 @@ const Projectmodal = ({
           <div className='flex flex-col gap-5'>{modalContent}</div>
 
           <div className='mt-10'>
-            <p className='font-bold'>
-              Project Links<span>.</span>
-            </p>
             <div className='flex items-center gap-5'>
               <a target="_blank" rel="nofollow" href={code} className="flex gap-2 items-center">
-                <AiFillGithub /> source code
+                <AiFillGithub size='2rem' /> source code
               </a>
               <a target="_blank" rel="nofollow" href={projectLink} className="flex gap-2 items-center">
-                <AiOutlineExport /> live project
+                <AiOutlineExport size='2rem'/> live project
               </a>
             </div>
           </div>

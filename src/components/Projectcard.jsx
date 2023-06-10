@@ -47,7 +47,7 @@ const Projectcard = ({
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           onClick={() => setIsOpen(true)}
-          className='w-full aspect-video relative overflow-hidden rounded-xl  bg-opacity-10 backdrop-filter backdrop-blur-lg bg-gray-300'
+          className='w-full aspect-video relative overflow-hidden rounded-xl bg-opacity-10 backdrop-filter backdrop-blur-lg bg-gray-300'
         >
           <img
             src={imgSrc}
@@ -59,30 +59,63 @@ const Projectcard = ({
             }}
           />
         </div>
-        <div className='mx-6'>
-          <Reveal width="100%">
-            <div className='flex items-center gap-5'>
-              <h4 className="font-bold text-2xl">{title}</h4>
-              <div className='w-full h-[1px] opacity-30' />
+        <div className='px-2 mt-4'>
+          <div width="100%">
+            <div className=' flex items-center justify-center  gap-5  overflow-hidden'>
+              <h4 className="font-bold text-2xl flex-shrink-0">{title}</h4>
+              <div className='w-full h-[1px] bg-yellow-300' />
 
-              <a href={code} target="_blank" rel="nofollow">
-                <AiFillGithub size="2.8rem" />
-              </a>
+              <div ref={ref} className='flex text-white gap-2 '>
+              <motion.span
+                variants={{
+                  initial:{ x: -30, opacity: 0 },
+                  visible:{ x: 0, opacity: 1 },
+                }}
+                initial='initial'
+                animate={controls}
+                transition={{ease:'easeInOut', duration: 1 }}
+                className='hover:text-yellow-300'
+              >
+                <a href="https://www.linkedin.com" target="_blank" rel="nofollow">
+                  <AiOutlineExport size="2.4rem" />
+                </a>
+              </motion.span>
 
-              <a href={projectLink} target="_blank" rel="nofollow">
-                <AiOutlineExport size="2.8rem" />
-              </a>
+              <motion.span
+                variants={{
+                  initial:{ x: 30, opacity: 0 },
+                  visible:{ x: 0, opacity: 1 },
+                }}
+                initial='initial'
+                animate={controls}
+                transition={{ease:'easeInOut', duration: 1 }}
+                className='hover:text-yellow-300'
+              >
+                <a href="https://www.github.com" target="_blank" rel="nofollow">
+                  <AiFillGithub size="2.4rem" />
+                </a>
+              </motion.span>
+
             </div>
-          </Reveal>
-          <Reveal>
-            <div className='flex flex-wrap gap-5 mx-3'>{tech.join(" - ")}</div>
-          </Reveal>
-          <Reveal>
-            <p className='font-extralight'>
+
+            </div>
+          </div>
+          <div className='mt-4 flex flex-wrap gap-2'>
+          {tech.map((tag) => (
+            <span
+              key={`${tag.name}`}
+              className={`text-[15px]  bg-slate-600 px-2 py-1 bg-opacity-30 rounded-3xl ${tag.color}`}
+            >
+              #{tag.name}
+            </span>
+          ))}
+        </div>
+          <div>
+            <p className='font-extralight text'>
               {description}{" "}
-              <span onClick={() => setIsOpen(true)}>Learn more {">"}</span>
+              <span onClick={() => setIsOpen(true)} className="text-yellow-300">Learn more {">"}</span>
             </p>
-          </Reveal>
+          </div>
         </div>
       </motion.div>
       <Projectmodal
