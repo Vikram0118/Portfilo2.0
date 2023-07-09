@@ -106,13 +106,6 @@ const certifications = [
 
 const experienece = [
   {
-    id:'aero',
-    name : 'Aerobiosys Innovations',
-    role : 'Backend Engineering Intern',
-    icon : aero,
-    des : 'Worked in the developemnet of an ERP'
-  },
-  {
     id:'peerxp',
     name : 'PeerXP Technologies',
     role : 'Frontend Developer Intern',

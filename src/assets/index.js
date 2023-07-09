@@ -40,6 +40,7 @@ export {
 
     github,
     linkedin,
+    
     Profilepic
   };
   
