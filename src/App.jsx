@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, Body, Header} from './containers'
+import {Navbar, Body} from './containers'
 import {Stars} from './components/canvas'
 import {Footer} from './components'
 
@@ -10,9 +10,8 @@ const App = () => {
         <Navbar /> 
         <div className='relative z-0'>
           <Body />
-          {/* <Stars /> */}
+          <Stars />
           <Footer />
-
         </div>
       </div>
     </>

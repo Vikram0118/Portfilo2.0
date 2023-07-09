@@ -1,6 +1,8 @@
 import { Projectcard } from "../components";
 import {Reveal} from '../utils'
+
 import profilepic from '../assets/Profilepic.jpg';
+import profilepic2 from '../assets/Profilepic2.jpg';
 
 const Projects = () => {
   return (
@@ -20,8 +22,8 @@ const Projects = () => {
 
 const projects = [
   {
-    title: "Paint.app",
-    imgSrc: profilepic,
+    title: "Neura 2023",
+    imgSrc: [profilepic, profilepic2, profilepic, profilepic2],
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: [
@@ -30,7 +32,7 @@ const projects = [
         color: "text-yellow-300",
       },
       {
-        name: "mongodb",
+        name: "framer",
         color: "text-yellow-300",
       },
       {
@@ -65,23 +67,24 @@ const projects = [
         </p>
       </>
     ),
+    deg : "2deg",
   },
   {
-    title: "The Canvas Club",
-    imgSrc: profilepic,
+    title: "ERP",
+    imgSrc: [profilepic, profilepic, profilepic, profilepic],
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: [
       {
-        name: "react",
+        name: "PHP",
         color: "text-yellow-300",
       },
       {
-        name: "mongodb",
+        name: "MySQL",
         color: "text-yellow-300",
       },
       {
-        name: "tailwind",
+        name: "JS",
         color: "text-yellow-300",
       },
     ],      
@@ -115,19 +118,20 @@ const projects = [
         </p>
       </>
     ),
+    deg : "2deg",
   },
   {
-    title: "BrushWire",
-    imgSrc: profilepic,
+    title: "To-Do List",
+    imgSrc: [profilepic, profilepic, profilepic, profilepic],
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: [
       {
-        name: "react",
+        name: "Django",
         color: "text-yellow-300",
       },
       {
-        name: "mongodb",
+        name: "SQL",
         color: "text-yellow-300",
       },
       {
@@ -158,23 +162,24 @@ const projects = [
         </p>
       </>
     ),
+    deg : "2deg",
   },
   {
-    title: "Paint Reference 4",
-    imgSrc: profilepic,
+    title: "Games",
+    imgSrc: [profilepic, profilepic, profilepic, profilepic],
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: [
       {
-        name: "react",
+        name: "HTML",
         color: "text-yellow-300",
       },
       {
-        name: "mongodb",
+        name: "CSS",
         color: "text-yellow-300",
       },
       {
-        name: "tailwind",
+        name: "JS",
         color: "text-yellow-300",
       },
     ],  
@@ -198,6 +203,7 @@ const projects = [
         </p>
       </>
     ),
+    deg : "2deg",
   },
 ];
 

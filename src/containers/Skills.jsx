@@ -1,7 +1,6 @@
 import React from 'react'
 import {BallCanvas} from '../components/canvas'
 import {technologiesAtWork, technologiesForFun} from '../constants'
-import {Experience, Certification} from '../components'
 import {Reveal} from '../utils'
 
 const Skills = () => {
@@ -36,10 +35,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-      
       </div>
-      <Experience />
-      <Certification />
     </div>
   )
 }

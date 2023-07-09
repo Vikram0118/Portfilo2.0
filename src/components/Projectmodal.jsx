@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
+import {ImageSlider}  from "./index";
 
 const Projectmodal = ({
   modalContent,
@@ -34,13 +35,9 @@ const Projectmodal = ({
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         onClick={(e) => e.stopPropagation()}
-        className='w-full max-w-4xl h-fit overflow-hidden cursor-auto rounded-3xl bg-slate-400'
+        className='w-full max-w-4xl h-fit overflow-hidden cursor-auto bg-slate-400'
       >
-        <img
-          className='h-96 w-full'
-          src={imgSrc}
-          alt={`An image of the ${title} project.`}
-        />
+        <ImageSlider imgSrc={imgSrc}/>
         <div className='p-10'>
           <h4 className="text-3xl">{title}</h4>
           <div className='flex flex-wrap gap-5 text-lg'>{tech.join(" - ")}</div>

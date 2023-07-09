@@ -1,4 +1,3 @@
-import { Reveal } from "../utils";
 import { useAnimation, useInView, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
@@ -12,6 +11,7 @@ const Projectcard = ({
   title,
   code,
   tech,
+  deg
 }) => {
   const [hovered, setHovered] = useState(false);
 
@@ -50,12 +50,12 @@ const Projectcard = ({
           className='w-full aspect-video relative overflow-hidden rounded-xl bg-opacity-10 backdrop-filter backdrop-blur-lg bg-gray-300'
         >
           <img
-            src={imgSrc}
+            src={imgSrc[0]}
             alt={`An image of the ${title} project.`}
             className="w-5/6 absolute b-0 left-1/2 -translate-x-1/2 translate-y-12 duration-300"
             style={{
               width: hovered ? "90%" : "85%",
-              rotate: hovered ? "2deg" : "0deg",
+              rotate: hovered ? deg : "0deg",
             }}
           />
         </div>
@@ -106,14 +106,14 @@ const Projectcard = ({
               key={`${tag.name}`}
               className={`text-[15px]  bg-slate-600 px-2 py-1 bg-opacity-30 rounded-3xl ${tag.color}`}
             >
-              #{tag.name}
+              #&nbsp;{tag.name}
             </span>
           ))}
         </div>
           <div>
             <p className='font-extralight text'>
-              {description}{" "}
-              <span onClick={() => setIsOpen(true)} className="text-yellow-300">Learn more {">"}</span>
+              {description}{" "}<br />
+              <span onClick={() => setIsOpen(true)} className="text-yellow-300 cursor-pointer">Learn more {">"}</span>
             </p>
           </div>
         </div>

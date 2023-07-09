@@ -9,16 +9,7 @@ import {
     tailwind,
     threejs,
     typescript,
-
-    awsccp,
-    awsssa,
-
-    peerxp,
-    aero,
-
-    github,
-    linkedin
-
+    
 } from '../assets'
 
 const technologiesAtWork = [
@@ -87,48 +78,7 @@ const technologiesAtWork = [
     }
   ];
 
-const certifications = [
-  {
-    id : 'awsssa',
-    name : 'AWS Solution Architect Associate',
-    percentage : '89',
-    icon : awsssa,
-    des : 'Got the ability to design architectures that are secure, resilient, high-performing, and cost-optimized using AWS services'
-  },
-  {
-    id : 'awsccp',
-    name : 'AWS Cloud Particitioner',
-    percentage : '93',
-    icon : awsccp,
-    des : 'Got a deep understanding of AWS Cloud concepts, Security and compliance within the AWS Cloudand economics of the AWS Cloud'
-  }
-]
-
-const experienece = [
-  {
-    id:'peerxp',
-    name : 'PeerXP Technologies',
-    role : 'Frontend Developer Intern',
-    icon : peerxp,
-    des : 'Worked in the developmenyt of a custom React component library'
-  }
-]
-
-const socialLinks = [
-  {
-    name : 'github',
-    icon : github
-  },
-  {
-    name : 'linkedin',
-    icon : linkedin
-  },
-]
-
 export {
   technologiesAtWork,
   technologiesForFun,
-  certifications,
-  experienece,
-  socialLinks
 }

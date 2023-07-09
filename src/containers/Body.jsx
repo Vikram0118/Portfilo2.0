@@ -1,6 +1,6 @@
 import React from 'react'
 import {Aboutjson, Hero} from '../components'
-import {Skills, Contact, Header, Projects} from '../containers'
+import {Skills, Contact, Projects} from '../containers'
 
 const Body = () => {
   

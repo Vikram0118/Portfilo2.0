@@ -9,15 +9,6 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/django.jpg";
 
-import awsccp from './cert/awsccp.png'
-import awsssa from './cert/awsssa.png'
-
-import peerxp from './exp/peerxplogo.png'
-import aero from './exp/aerologo.gif'
-
-import github from './social/github.svg'
-import linkedin from './social/linkedin.svg'
-
 import Profilepic from './Profilepic2.jpg'
 
 export {
@@ -31,15 +22,6 @@ export {
     tailwind,
     typescript,
     threejs,
-
-    awsccp,
-    awsssa,
-
-    peerxp,
-    aero,
-
-    github,
-    linkedin,
     
     Profilepic
   };
