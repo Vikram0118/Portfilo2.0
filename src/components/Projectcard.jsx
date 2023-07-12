@@ -66,20 +66,21 @@ const Projectcard = ({
               <div className='w-full h-[1px] bg-yellow-300' />
 
               <div ref={ref} className='flex text-white gap-2 '>
-              <motion.span
-                variants={{
-                  initial:{ x: -30, opacity: 0 },
-                  visible:{ x: 0, opacity: 1 },
-                }}
-                initial='initial'
-                animate={controls}
-                transition={{ease:'easeInOut', duration: 1 }}
-                className='hover:text-yellow-300'
-              >
-                <a href="https://www.linkedin.com" target="_blank" rel="nofollow">
-                  <AiOutlineExport size="2.4rem" />
-                </a>
-              </motion.span>
+                {projectLink ? 
+                  <motion.span
+                    variants={{
+                      initial:{ x: -30, opacity: 0 },
+                      visible:{ x: 0, opacity: 1 },
+                    }}
+                    initial='initial'
+                    animate={controls}
+                    transition={{ease:'easeInOut', duration: 1 }}
+                    className='hover:text-yellow-300'
+                  >
+                    <a href={projectLink} target="_blank" rel="nofollow">
+                      <AiOutlineExport size="2.4rem" />
+                    </a>
+                  </motion.span> : null }
 
               <motion.span
                 variants={{
@@ -91,7 +92,7 @@ const Projectcard = ({
                 transition={{ease:'easeInOut', duration: 1 }}
                 className='hover:text-yellow-300'
               >
-                <a href="https://www.github.com" target="_blank" rel="nofollow">
+                <a href={code} target="_blank" rel="nofollow">
                   <AiFillGithub size="2.4rem" />
                 </a>
               </motion.span>

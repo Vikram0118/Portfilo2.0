@@ -10,7 +10,7 @@ const App = () => {
         <Navbar /> 
         <div className='relative z-0'>
           <Body />
-          <Stars />
+          {/* <Stars /> */}
           <Footer />
         </div>
       </div>

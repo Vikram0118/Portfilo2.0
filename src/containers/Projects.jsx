@@ -3,10 +3,11 @@ import {Reveal} from '../utils'
 
 import profilepic from '../assets/Profilepic.jpg';
 import profilepic2 from '../assets/Profilepic2.jpg';
+import {neura1, neura2, neura3} from '../assets'
 
 const Projects = () => {
   return (
-    <section className="max-w-5xl mx-auto my-20" id="projects">
+    <section className="max-w-5xl mx-auto my-20 scroll-mt-24" id="projects">
       <Reveal>
         <p className='text-5xl font-extrabold text-white py-2'>Projects<span className='text-yellow-300'>.</span></p>
       </Reveal>
@@ -23,20 +24,20 @@ const Projects = () => {
 const projects = [
   {
     title: "Neura 2023",
-    imgSrc: [profilepic, profilepic2, profilepic, profilepic2],
+    imgSrc: [neura1, neura3, neura2],
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    projectLink: "https://neura-2k23.netlify.app/",
     tech: [
       {
-        name: "react",
+        name: "React",
         color: "text-yellow-300",
       },
       {
-        name: "framer",
+        name: "Framer",
         color: "text-yellow-300",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "text-yellow-300",
       },
     ],  
@@ -73,7 +74,6 @@ const projects = [
     title: "ERP",
     imgSrc: [profilepic, profilepic, profilepic, profilepic],
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: [
       {
         name: "PHP",
@@ -124,7 +124,6 @@ const projects = [
     title: "To-Do List",
     imgSrc: [profilepic, profilepic, profilepic, profilepic],
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: [
       {
         name: "Django",
@@ -135,7 +134,7 @@ const projects = [
         color: "text-yellow-300",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "text-yellow-300",
       },
     ],  
@@ -168,7 +167,6 @@ const projects = [
     title: "Games",
     imgSrc: [profilepic, profilepic, profilepic, profilepic],
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: [
       {
         name: "HTML",

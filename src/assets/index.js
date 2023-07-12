@@ -11,6 +11,11 @@ import threejs from "./tech/django.jpg";
 
 import Profilepic from './Profilepic2.jpg'
 
+import neura1 from './projectpics/neura1.png'
+import neura2 from './projectpics/neura2.png'
+import neura3 from './projectpics/neura3.png'
+
+
 export {
     css,
     git,
@@ -23,6 +28,10 @@ export {
     typescript,
     threejs,
     
-    Profilepic
+    Profilepic,
+
+    neura1,
+    neura2,
+    neura3
   };
   

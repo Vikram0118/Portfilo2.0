@@ -40,11 +40,9 @@ const Contact = () => {
 
           <Reveal>
             <a href="mailto:bob.ross@notreal.com" >
-              <div className='flex items-center justify-center w-fit m-auto text-white gap-2'>
-                <span className="text-yellow-300 hover:text-white"> 
-                  <AiFillMail size="2.4rem" />
-                </span>
-                <span className="text-xl text-yellow-300 hover:text-white">vikrampalani0107@gmail.com</span>
+              <div className='flex items-center justify-center w-fit m-auto text-yellow-300 hover:text-white gap-2 text-xl'>
+                <AiFillMail size="2.4rem" /> 
+                <p>vikrampalani0107@gmail.com</p>
               </div>
             </a>
           </Reveal>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-const Reveal = ({ children, width = "fit-content" }) => {
+const Reveal = ({ children, width = "fit-content", delay =0.5 }) => {
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 
@@ -10,8 +10,10 @@ const Reveal = ({ children, width = "fit-content" }) => {
 
   useEffect(() => {
     if (isInView) {
-      slideControls.start("visible");
-      mainControls.start("visible");
+      setTimeout(() => {
+        slideControls.start("visible");
+        mainControls.start("visible");
+      }, delay * 1000);
     } else {
       slideControls.start("hidden");
       mainControls.start("hidden");

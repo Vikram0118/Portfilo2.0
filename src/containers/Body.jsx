@@ -5,7 +5,7 @@ import {Skills, Contact, Projects} from '../containers'
 const Body = () => {
   
   return (
-    <div className='relative'>
+    <div className=''>
       <Hero />
       <Aboutjson />
       <Skills />

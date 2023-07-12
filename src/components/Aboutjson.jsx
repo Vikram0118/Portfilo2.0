@@ -21,7 +21,7 @@ const Aboutjson = () => {
   }, [isInView, mainControls, slideControls]);
 
   return (
-    <div id='AboutMe' className='scroll-mt-20 max-w-4xl mx-auto '>
+    <div id='AboutMe' className='scroll-mt-24 max-w-4xl mx-auto mb-20 mt-32'>
       <div className=' w-full rounded-t-md p-2'>
         <Reveal>
           <p className='text-5xl text-white font-extrabold mb-5'>About_me<span className='text-yellow-300'>.json</span></p>
@@ -29,13 +29,6 @@ const Aboutjson = () => {
       </div>
       <motion.div 
         ref={ref}
-        // variants={{
-        //   initial:{ x: 400, opacity: 0 },
-        //   visible:{ x: 0, opacity: 1 },
-        // }}
-        // initial='initial'
-        // animate={mainControls}
-        // transition={{ease:'easeInOut', duration: 1 }}
 
         variants={{
           hidden: { opacity: 0, y: 100 },
@@ -45,28 +38,26 @@ const Aboutjson = () => {
         animate={mainControls}
         transition={{ duration: 0.75 }}
 
-        className=' flex flex-col h-auto  text-white bg-opacity-10 backdrop-filter backdrop-blur-lg bg-gray-300 p-4 rounded-xl '>
+        className=' flex flex-col h-auto  text-white bg-opacity-50 backdrop-filter backdrop-blur-lg bg-black p-4 rounded-lg '>
           <div className='flex flex-col gap-2 px-3 py-2 text-xl font-extralight'>
-              <p>&#123;</p>
+              <p className='font-light text-4xl text-yellow-500'>&#123;</p>
               <div className='flex flex-col gap-2 pl-10'>
-                  <p><span className='text-red-600'>"name"</span> : <span className='text-blue-600'>"Vikram P" ,</span></p>
-                  <p><span className='text-red-600'>"title"</span> : [ <br/>
-                    <span className='text-blue-600 pl-10'>"React JS developer" ,</span> <br/>
-                    <span className='text-blue-600 pl-10'>"Django developer" ,</span> <br />
-                    <span className='text-blue-600 pl-10'>"Gamer"</span> <br/>
-                  ] ,
+                  <p><span className='text-red-500'>"name"</span> : <span className='text-green-400'>"Vikram P" <span className='text-white'>,</span></span></p>
+                  <p><span className='text-red-500'>"title"</span> : <span className='font-light text-pink-600'>[</span>  <br/>
+                    <span className=' pl-10 text-green-400'>"Web developer" <span className='text-white'>,</span></span> <br/>
+                  <span className='font-light text-pink-500'>]</span>  ,
                   </p>
-                  <p><span className='text-red-600'>"location"</span> : <span className='text-blue-600'>"Puducherry , India" ,</span></p>
-                  <p><span className='text-red-600'>"bio"</span> : <span className='text-blue-600'>"Hardworking and dedicated web developer with a strong commitment to delivering high-quality solutions. Passionate about continuously learning and staying up-to-date with the latest technologies to provide efficient and innovative web development services." ,</span></p>
-                  <p><span className='text-red-600'>"education"</span> : &#123;
+                  <p><span className='text-red-500 '>"location"</span> : <span className='text-green-400'>"Puducherry , India" <span className='text-white'>,</span></span></p>
+                  <p><span className='text-red-500 '>"bio"</span> : <span className='text-green-400'>"Hardworking and dedicated web developer with a strong commitment to delivering high-quality solutions. Passionate about continuously learning and staying up-to-date with the latest technologies to provide efficient and innovative solution." <span className='text-white'>,</span></span></p>
+                  <p><span className='text-red-500 '>"education"</span> : <span className='font-light text-pink-600'>&#123;</span> 
                   <div className='pl-10'>
-                    <p><span className='text-red-600'>"college"</span> : <span className='text-blue-600'>"B.Tech - Information Technology - PTU" ,</span></p>
-                    <p><span className='text-red-600'>"school"</span> : <span className='text-blue-600'>"New Modern Vidhya Mandir Hr. Sec. School"</span></p>
+                    <p><span className='text-red-500 '>"college"</span> : <span className='text-green-400'>"B.Tech - Information Technology - PTU" <span className='text-white'>,</span></span></p>
+                    <p><span className='text-red-500 '>"school"</span> : <span className='text-green-400'>"New Modern Vidhya Mandir Hr. Sec. School"</span></p>
                   </div>
-                  <p>&#125;</p>
+                  <p className='font-light text-pink-600'>&#125;</p>
                   </p>
               </div>
-              <p>&#125;</p>
+              <p className='font-light text-4xl text-yellow-500'>&#125;</p>
           </div>
 
       </motion.div>
