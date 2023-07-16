@@ -39,7 +39,7 @@ const Contact = () => {
           <p className='text-center' > Shoot me an email if you want to connect! </p> 
 
           <Reveal>
-            <a href="mailto:bob.ross@notreal.com" >
+            <a href="mailto:vikrampalani0107@gmail.com" >
               <div className='flex items-center justify-center w-fit m-auto text-yellow-300 hover:text-white gap-2 text-xl'>
                 <AiFillMail size="2.4rem" /> 
                 <p>vikrampalani0107@gmail.com</p>

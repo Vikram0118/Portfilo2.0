@@ -2,8 +2,7 @@ import { Projectcard } from "../components";
 import {Reveal} from '../utils'
 
 import profilepic from '../assets/Profilepic.jpg';
-import profilepic2 from '../assets/Profilepic2.jpg';
-import {neura1, neura2, neura3} from '../assets'
+import {expense1, expense2, expense3, expense4, neura1, neura2, neura3, todolist1, todolist2, todolist3} from '../assets'
 
 const Projects = () => {
   return (
@@ -25,7 +24,7 @@ const projects = [
   {
     title: "Neura 2023",
     imgSrc: [neura1, neura3, neura2],
-    code: "https://www.github.com",
+    code: "https://github.com/Vikram0118/Neura",
     projectLink: "https://neura-2k23.netlify.app/",
     tech: [
       {
@@ -41,30 +40,15 @@ const projects = [
         color: "text-yellow-300",
       },
     ],  
-    description: "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.",
+    description: "A dynamic platform featuring a national-level technical symposium, providing participants from various colleges across Puducherry and India with event details.",
     modalContent: (
       <>
         <p>
-          Pain.app is a real-time coaching app for students learning to paint.
-          This app is my baby, designed and built on my own.
+          Neura 2023 is an exciting national-level technical symposium that aims to bring together talented individuals from colleges across Puducherry.
+          As a featured website, Neura's platform offers a comprehensive and engaging experience for participants, providing them with all the necessary information about the event.
         </p>
         <p>
-          The tech stack is based on top of Flutter for the mobile app,
-          connected to a Python & FastAPI backend, with data stored in Postgres,
-          deployed on Heroku.
-        </p>
-        <p>
-          Because this isn&apos;t real, here&apos;s some gibberish to fill space{" "}
-          {":)"}
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+        Through the Neura website, participants can explore detailed event schedules, understand the requirements for each contest, and access resources to enhance their preparation. The website's user-friendly interface ensures seamless navigation, enabling participants to register for their desired contests conveniently.
         </p>
       </>
     ),
@@ -121,24 +105,25 @@ const projects = [
     deg : "2deg",
   },
   {
-    title: "To-Do List",
-    imgSrc: [profilepic, profilepic, profilepic, profilepic],
-    code: "https://www.github.com",
+    title: "To-Do List App",
+    imgSrc: [todolist1, todolist2, todolist3],
+    code: "https://github.com/Vikram0118/To_Do_List",
+    projectLink : "https://projects-tododlist.netlify.app/",
     tech: [
       {
-        name: "Django",
+        name: "React",
         color: "text-yellow-300",
       },
       {
-        name: "SQL",
+        name: "CSS",
         color: "text-yellow-300",
       },
       {
-        name: "Tailwind",
+        name: "HTML",
         color: "text-yellow-300",
       },
     ],  
-    description:"Think Zapier but for paint. Built with a team of four college friends and scaled to > 1 billion requests per day. This was a fun one.",
+    description:"Neura 2023 - A dynamic platform featuring a national-level technical symposium, providing participants from various colleges across Puducherry with event details and online registration.",
     modalContent: (
       <>
         <p>
@@ -164,20 +149,21 @@ const projects = [
     deg : "2deg",
   },
   {
-    title: "Games",
-    imgSrc: [profilepic, profilepic, profilepic, profilepic],
-    code: "https://www.github.com",
+    title: "Expense Tractor App",
+    imgSrc: [expense1, expense2, expense3,expense4],
+    code: "https://github.com/Vikram0118/Personal-Finance-App",
+    projectLink: "https://projects-expensetracker.netlify.app/",
     tech: [
       {
-        name: "HTML",
+        name: "React",
         color: "text-yellow-300",
       },
       {
-        name: "CSS",
+        name: "Tailwind",
         color: "text-yellow-300",
       },
       {
-        name: "JS",
+        name: "Context API",
         color: "text-yellow-300",
       },
     ],  

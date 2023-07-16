@@ -2,13 +2,15 @@ import {
     css,
     git,
     html,
+    java,
     javascript,
-    mongodb,
+    mysql,
     nodejs,
     reactjs,
     tailwind,
     threejs,
-    typescript,
+    django,
+    php
     
 } from '../assets'
 
@@ -26,8 +28,8 @@ const technologiesAtWork = [
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "mysql",
+      icon: php,
     },
     {
       name: "React JS",
@@ -42,8 +44,8 @@ const technologiesAtWork = [
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "java",
+      icon: java,
     },
     {
       name: "Three JS",
@@ -57,20 +59,20 @@ const technologiesAtWork = [
 
   const technologiesForFun = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "threejs",
+      icon: threejs,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "django",
+      icon: django,
     },
     {
       name: "JavaScript",
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "java",
+      icon: java,
     },
     {
       name: "React JS",

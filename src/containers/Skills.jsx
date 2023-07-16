@@ -13,7 +13,7 @@ const Skills = () => {
 
       <div>
         <Reveal>
-          <p className='text-2xl text-white font-light'>Things I use at <span className='text-yellow-300'>work</span> </p>
+          <p className='text-2xl text-white font-light'>Things I use <span className='text-yellow-300'>EveryDay</span> </p>
         </Reveal>
         <div className='flex flex-wrap justify-center'>
           {technologiesAtWork.map((technology) => (

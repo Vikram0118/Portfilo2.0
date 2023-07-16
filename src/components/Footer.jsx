@@ -64,7 +64,8 @@ const Footer = () => {
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <p className='text-lg font-light text-white text-center'>All Rights Reserved © 2023</p>
+        <p className='text-sm font-extralight text-white text-center'>Developed with 💛 by <span className='text-yellow-300'>Vikram</span> </p>
+        {/* <p className='text-lg font-light text-white text-center'>All Rights Reserved © 2023</p> */}
     </div>
   )
 }
