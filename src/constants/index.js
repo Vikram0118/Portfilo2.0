@@ -14,6 +14,21 @@ import {
     
 } from '../assets'
 
+export const navLinks = [
+  {
+    id: "AboutMe",
+    title: "About",
+  },
+  {
+    id: "Skills",
+    title: "Skills",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+];
+
 const technologiesAtWork = [
     {
       name: "HTML 5",

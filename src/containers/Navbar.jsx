@@ -1,6 +1,7 @@
-import React from 'react'
-import {Toggle} from '../components'
+import React, {useState} from 'react'
+import {navLinks} from '../constants'
 import {motion} from 'framer-motion'
+import {close, menu} from '../assets'
 
 const pathVariants = {
   hidden : {
@@ -18,6 +19,8 @@ const pathVariants = {
 }
 
 const Navbar = () => {
+
+  const [toggle, setToggle] = useState(false);
   
   return (
     <nav className="w-screen fixed z-30 bg-black px-2 py-4 backdrop-blur-xl backdrop-filter bg-opacity-30 ">
@@ -31,36 +34,35 @@ const Navbar = () => {
           </a>
 
           <div className="hidden md:block">
-            <ul className="space-x-8 text-2xl font-light overflow-hidden px-auto">
-              <motion.li
-               initial={{ y: 70 }}
-               animate={{ y: 0 }}
-               transition={{ duration: 0.5, delay: 0.1 }}
-               className="inline-block ">
-                <a href="#AboutMe" className="hover:text-yellow-300 cursor-pointer text-white">
-                  About Me
-                </a>
-              </motion.li>
-              <motion.li
-                initial={{ y: 70 }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.5, delay: 0.15 }}
-                className="inline-block">
-                <a href="#Skills" className="hover:text-yellow-300 text-white">
-                  Skills
-                </a>
-              </motion.li>
-              <motion.li
-                initial={{ y: 70 }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.5, delay: 0.25 }}
-                className="inline-block">
-                <a href="#projects" className="hover:text-yellow-300 text-white">
-                  Projects
-                </a>
-              </motion.li>
+            <ul className='list-none hidden sm:flex flex-row space-x-8 text-2xl font-light overflow-hidden px-auto'>
+              {navLinks.map((link) => (
+                <motion.li 
+                  key={link.id} 
+                  initial={{ y: 70 }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className='inline-block'
+                >
+                  <a href={`#${link.id}`} className='hover:text-yellow-300 text-white'>{link.title}</a>
+                </motion.li>
+              ))}
             </ul>
           </div>
+          {/* mobile nav bar menu */}
+          <div className='sm:hidden flex flex-1 justify-end items-center'>
+          <img src={toggle ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain cursor-pointer' onClick={() => setToggle(!toggle) } />
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-gradient-to-r from-yellow-300 to-black`}>
+            <ul className='list-none flex justify-end items-start flex-col gap-4'>
+              {navLinks.map((link) => (
+                <li key={link.id} className='hover:text-white text-xl font-extralight font-medium cursor-pointer' onClick = {() => { 
+                  setToggle(!toggle)
+                  }}>
+                  <a href={`#${link.id}`}>{link.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
         </div>
       </div>
     </nav>

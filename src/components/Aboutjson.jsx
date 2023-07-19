@@ -45,7 +45,7 @@ const Aboutjson = () => {
                   <p><span className='text-red-500'>"name"</span> : <span className='text-green-400'>"Vikram P" <span className='text-white'>,</span></span></p>
                   <p><span className='text-red-500'>"title"</span> : <span className='font-light text-pink-600'>[</span>  <br/>
                     <span className=' pl-10 text-green-400'>"Web developer" <span className='text-white'>,</span></span> <br/>
-                  <span className='font-light text-pink-500'>]</span>  ,
+                  <span className='font-light text-pink-600'>]</span>  ,
                   </p>
                   <p><span className='text-red-500 '>"location"</span> : <span className='text-green-400'>"Puducherry , India" <span className='text-white'>,</span></span></p>
                   <p><span className='text-red-500 '>"bio"</span> : <span className='text-green-400'>"Hardworking and dedicated web developer with a strong commitment to delivering high-quality solutions. Passionate about continuously learning and staying up-to-date with the latest technologies to provide efficient and innovative solution." <span className='text-white'>,</span></span></p>

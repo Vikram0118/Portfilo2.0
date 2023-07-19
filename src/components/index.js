@@ -1,7 +1,6 @@
 export {default as Hero} from './Hero'
 export {default as Aboutjson} from './Aboutjson'
 export {default as Loader} from './Loader'
-export {default as Toggle} from './Toggle'
 export {default as Projectcard} from './Projectcard'
 export {default as Footer} from './Footer'
 export {default as Projectmodal} from './Projectmodal'

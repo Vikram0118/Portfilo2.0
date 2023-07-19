@@ -26,6 +26,8 @@ import todolist1 from './projectpics/todolist1.png'
 import todolist2 from './projectpics/todolist2.png'
 import todolist3 from './projectpics/todolist3.png'
 
+import menu from './menu.svg'
+import close from './close.svg'
 
 export {
     css,
@@ -54,6 +56,9 @@ export {
     expense1, 
     expense2,
     expense3,
-    expense4
+    expense4,
+
+    menu,
+    close
   };
   

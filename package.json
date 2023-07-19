@@ -16,6 +16,7 @@
     "framer-motion": "^10.12.16",
     "particlesjs": "^2.2.3",
     "react": "^18.2.0",
+    "react-burger-icons": "^1.1.8",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-tilt": "^1.0.2",

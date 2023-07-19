@@ -47,15 +47,16 @@ const Hero = () => {
             </a>
           </motion.span>
         </div>
-        <motion.button
+        <motion.a
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ ease: 'easeInOut', duration: 1 }} 
-          onClick={() => window.open('/src/assets/vikram_resume.pdf')}
+          href="https://drive.google.com/file/d/1yl-b2M9iyNzykmHQa9rZYehMzfui_D5n/view?usp=sharing"
+          target='_blank'
           className='appearance-none font-light px-4 py-2 rounded-sm text-yellow-300 border-[1px] border-yellow-300 w-fit mt-4 p-2 pl-5 pr-5 bg-transparent text-lg transition-colors duration-700 transform hover:bg-white hover:border-white hover:text-black focus:border-yellow-300'
         >
           Download CV
-        </motion.button>
+        </motion.a>
       </div>
 
       <motion.img 
