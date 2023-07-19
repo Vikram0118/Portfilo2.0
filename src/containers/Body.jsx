@@ -5,13 +5,13 @@ import {Skills, Contact, Projects} from '../containers'
 const Body = () => {
   
   return (
-    <div className=''>
+    <>
       <Hero />
       <Aboutjson />
       <Skills />
       <Projects />
       <Contact />
-    </div>
+    </>
     )
 }
 

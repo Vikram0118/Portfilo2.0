@@ -20,7 +20,7 @@ const pathVariants = {
 const Navbar = () => {
   
   return (
-    <nav className="w-screen fixed z-50 bg-black px-2 py-4 backdrop-blur-xl backdrop-filter bg-opacity-30 ">
+    <nav className="w-screen fixed z-30 bg-black px-2 py-4 backdrop-blur-xl backdrop-filter bg-opacity-30 ">
       <div className="max-w-4xl mx-auto  ">
         <div className="flex items-center justify-between">
 

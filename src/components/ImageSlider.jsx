@@ -22,7 +22,7 @@ const ImageSlider = ({ imgSrc }) => {
         <motion.img
           src={imgSrc[currentImageIndex]}
           alt={`Carousel Image ${currentImageIndex + 1}`}
-          className="object-contain w-full h-96"
+          className="object-contain w-full h-48 md:h-64 lg:h-96"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}

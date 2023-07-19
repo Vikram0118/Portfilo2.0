@@ -6,12 +6,12 @@ import {expense1, expense2, expense3, expense4, neura1, neura2, neura3, todolist
 
 const Projects = () => {
   return (
-    <section className="max-w-5xl mx-auto my-20 scroll-mt-24" id="projects">
+    <section className="max-w-5xl mx-auto my-20 scroll-mt-24 px-5" id="projects">
       <Reveal>
-        <p className='text-5xl font-extrabold text-white py-2'>Projects<span className='text-yellow-300'>.</span></p>
+        <p className=' text-4xl md:text-5xl font-extrabold text-white py-2'>Projects<span className='text-yellow-300'>.</span></p>
       </Reveal>
 
-      <div className='grid grid-cols-2 gap-12 mt-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mt-10'>
         {projects.map((project) => {
           return <Projectcard key={project.title} {...project} />;
         })}
@@ -40,7 +40,7 @@ const projects = [
         color: "text-yellow-300",
       },
     ],  
-    description: "A dynamic platform featuring a national-level technical symposium, providing participants from various colleges across Puducherry and India with event details.",
+    description: "A national-level technical symposium, providing participants from various colleges across Puducherry and India with event details.",
     modalContent: (
       <>
         <p>
@@ -105,7 +105,7 @@ const projects = [
     deg : "2deg",
   },
   {
-    title: "To-Do List App",
+    title: "To-Do List",
     imgSrc: [todolist1, todolist2, todolist3],
     code: "https://github.com/Vikram0118/To_Do_List",
     projectLink : "https://projects-tododlist.netlify.app/",
@@ -149,7 +149,7 @@ const projects = [
     deg : "2deg",
   },
   {
-    title: "Expense Tractor App",
+    title: "Expense Tracker",
     imgSrc: [expense1, expense2, expense3,expense4],
     code: "https://github.com/Vikram0118/Personal-Finance-App",
     projectLink: "https://projects-expensetracker.netlify.app/",

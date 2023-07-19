@@ -67,10 +67,6 @@ const technologiesAtWork = [
       icon: django,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
       name: "java",
       icon: java,
     },

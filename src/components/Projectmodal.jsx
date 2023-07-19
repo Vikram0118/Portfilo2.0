@@ -26,8 +26,8 @@ const Projectmodal = ({
   }, [isOpen]);
 
   const content = (
-    <div className='fixed top-0 left-0 right-0 z-50 h-[100vh] flex justify-center overflow-y-scroll px-20 py-5 backdrop-blur' onClick={() => setIsOpen(false)}>
-      <button className='absolute top-5 right-5 text-white text-4xl font-light'>
+    <div className='fixed top-0 left-0 right-0 z-40 h-[100vh] flex justify-center overflow-y-scroll px-2 sm:px-20 sm:py-5 backdrop-blur' onClick={() => setIsOpen(false)}>
+      <button className='z-50 absolute top-5 right-5 text-white text-4xl font-light'>
         <MdClose />
       </button>
 
@@ -35,14 +35,14 @@ const Projectmodal = ({
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         onClick={(e) => e.stopPropagation()}
-        className=' mx-auto w-full max-w-5xl h-fit overflow-hidden cursor-auto bg-yellow-300 backdrop-blur-2xl bg-opacity-80 backdrop-filter rounded-md'
+        className='mx-auto w-full max-w-5xl h-fit overflow-hidden mt-20 sm:mt-0 cursor-auto bg-yellow-300 backdrop-blur-2xl bg-opacity-80 backdrop-filter rounded-md'
 
       >
-        <div className="py-3 ">
+        <div className=" sm:py-3 ">
           <ImageSlider imgSrc={imgSrc}/>
         </div>
-        <div className='px-10 py-5'>
-          <p className="text-4xl font-bold text-white">{title}<span className="text-black text-5xl">.</span> </p>
+        <div className='px-10 sm:py-5'>
+          <p className="text-3xl sm:text-4xl font-bold text-white">{title}<span className="text-black text-5xl">.</span> </p>
           {
             tech
               .map(item => <span>{item.name}</span>)
@@ -51,7 +51,7 @@ const Projectmodal = ({
 
           <div className='flex flex-col gap-2 my-5'>{modalContent}</div>
 
-          <div className=''>
+          <div className='mb-5 sm:mb-2'>
             <div className='flex items-center gap-5'>
               <a target="_blank" rel="nofollow" href={code} className="flex gap-2 items-center">
                 <AiFillGithub size='2rem' /> source code
