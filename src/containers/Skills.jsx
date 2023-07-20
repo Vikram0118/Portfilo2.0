@@ -8,7 +8,7 @@ const Skills = () => {
     <div id='Skills' className='scroll-mt-[120px] max-w-4xl mx-auto my-26 px-5'>
 
       <Reveal>
-        <p className='text-3xl md:text-5xl text-white font-extrabold mb-5'>Skills<span className='text-yellow-300'>.</span></p>
+        <p className='text-2xl md:text-5xl text-white font-extrabold mb-5'>Skills<span className='text-yellow-300'>.</span></p>
       </Reveal>
 
       <div>

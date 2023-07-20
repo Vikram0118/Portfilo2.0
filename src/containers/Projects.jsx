@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section className="max-w-5xl mx-auto my-20 scroll-mt-24 px-5" id="projects">
       <Reveal>
-        <p className=' text-4xl md:text-5xl font-extrabold text-white py-2'>Projects<span className='text-yellow-300'>.</span></p>
+        <p className=' text-2xl md:text-5xl font-extrabold text-white py-2'>Projects<span className='text-yellow-300'>.</span></p>
       </Reveal>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mt-10'>

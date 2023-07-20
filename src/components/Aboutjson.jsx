@@ -24,7 +24,7 @@ const Aboutjson = () => {
     <div id='AboutMe' className='scroll-mt-24 max-w-4xl mx-auto mb-20 mt-32 px-'>
       <div className=' w-full rounded-t-md p-2'>
         <Reveal>
-          <p className='text-3xl md:text-5xl text-white font-extrabold mb-5'>About_me<span className='text-yellow-300'>.json</span></p>
+          <p className='text-2xl md:text-5xl text-white font-extrabold mb-5'>About_me<span className='text-yellow-300'>.json</span></p>
         </Reveal>
       </div>
       <motion.div 
