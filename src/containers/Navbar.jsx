@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {navLinks} from '../constants'
-import {motion} from 'framer-motion'
+import {AnimatePresence, motion} from 'framer-motion'
 import {close, menu} from '../assets'
 
 const pathVariants = {
@@ -17,6 +17,26 @@ const pathVariants = {
     }
   }
 }
+
+const meuVariants = {
+  hidden : {
+    opacity : 0,
+    x:'50vw'
+  },
+  visible : {
+    opacity : 1,
+    x:0,
+    transition : {
+      duration : 0.2,
+      ease : 'linear'
+    }
+  },
+  exit : {
+    opacity : 0,
+    x:'50vw'
+  }
+}
+
 
 const Navbar = () => {
 
@@ -51,17 +71,27 @@ const Navbar = () => {
           {/* mobile nav bar menu */}
           <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img src={toggle ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain cursor-pointer' onClick={() => setToggle(!toggle) } />
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-gradient-to-r from-yellow-300 to-black`}>
-            <ul className='list-none flex justify-end items-start flex-col gap-4'>
-              {navLinks.map((link) => (
-                <li key={link.id} className='hover:text-white text-xl font-extralight font-medium cursor-pointer' onClick = {() => { 
-                  setToggle(!toggle)
-                  }}>
-                  <a href={`#${link.id}`}>{link.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <AnimatePresence>
+            {toggle && (
+              <motion.div 
+              variants={meuVariants} 
+              initial='hidden' 
+              exit='exit'
+              animate={toggle ? 'visible' : 'hidden'}
+              className='flex p-6 black-gradient absolute top-20 right-0 mx-2 my-2 min-w-[140px] z-50 rounded-lg bg-black text-yellow-300'
+              >
+                <ul className='list-none flex justify-end items-start flex-col gap-4'>
+                  {navLinks.map((link) => (
+                    <li key={link.id} className='hover:text-white text-xl font-extralight cursor-pointer' onClick = {() => { 
+                      setToggle(!toggle)
+                      }}>
+                      <a href={`#${link.id}`}>{link.title}</a>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
         </div>
       </div>

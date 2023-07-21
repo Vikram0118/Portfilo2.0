@@ -30,7 +30,6 @@ const Projectmodal = ({
       <button className='z-50 absolute top-5 right-5 text-white text-4xl font-light'>
         <MdClose />
       </button>
-
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
