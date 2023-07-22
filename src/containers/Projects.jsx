@@ -123,26 +123,14 @@ const projects = [
         color: "text-yellow-300",
       },
     ],  
-    description:"Neura 2023 - A dynamic platform featuring a national-level technical symposium, providing participants from various colleges across Puducherry with event details and online registration.",
+    description:"A sleek and efficient To-Do List built with React and CSS, for organizing tasks efficiently with a user-friendly interface.",
     modalContent: (
       <>
         <p>
-          Brush wire is essentially Zapier but for paint. Built with a team of
-          four college friends and scaled to {">"} 1 billion requests per day.
-          This was a fun one.
+        The React CSS Todo List is a powerful yet elegant web application designed to help users manage their tasks and stay organized. Leveraging the capabilities of React and CSS, this feature-rich todo list offers a seamless and intuitive user experience. Users can easily add, edit, and delete tasks with just a few clicks, making it effortless to stay on top of their daily activities.
         </p>
         <p>
-          Since &quot;Zapier for paint&quot; doesn&apos;t mean anything, be
-          creative {":)"}
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+        Additionally, the React CSS Todo List utilizes local storage, ensuring that tasks are automatically saved, even if the user closes the browser.
         </p>
       </>
     ),
@@ -167,23 +155,14 @@ const projects = [
         color: "text-yellow-300",
       },
     ],  
-    description:"I couldn't think of another paint reference app, so here we are. I think you get the idea, right? Use your imagination 🌈",
+    description:"A user-friendly and visually appealing web application which enables effortless expense tracking and budget management.",
     modalContent: (
       <>
-        <p>Alright, you got me. I&apos;m all out of paint references.</p>
         <p>
-          Point is, use this space to explain a bit further WHAT this project
-          is, as well as what YOU contributed to it.
-        </p>
-        <p>You get the idea. Now more lorem {":)"}</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
+        The React Tailwind CSS Expense Tracker is a feature-rich web application that empowers users to effortlessly manage their expenses and keep track of their budgets. With a sleek and visually appealing interface powered by Tailwind CSS, users can enjoy a smooth and immersive experience while staying in control of their finances
         </p>
         <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+        The integration of Context API for state management ensures seamless data flow and enhanced performance, making it easy to add, edit, and categorize expenses in real-time.
         </p>
       </>
     ),

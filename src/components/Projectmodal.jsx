@@ -34,7 +34,7 @@ const Projectmodal = ({
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         onClick={(e) => e.stopPropagation()}
-        className='mx-auto w-full max-w-5xl h-fit overflow-hidden mt-20 sm:mt-0 cursor-auto bg-yellow-300 backdrop-blur-2xl bg-opacity-80 backdrop-filter rounded-md'
+        className='mx-auto w-full max-w-5xl h-fit overflow-hidden mt-20 sm:mt-0 cursor-auto bg-yellow-300 backdrop-blur-2xl bg-opacity-90 backdrop-filter rounded-md'
 
       >
         <div className=" sm:py-3 ">
