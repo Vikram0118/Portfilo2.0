@@ -5,7 +5,7 @@ import {Footer} from './components'
 const App = () => {
   return (
     <>
-      <div className='overflow-x-hidden bg-black'>
+      <div className='overflow-x-hidden bg-bgdark'>
         <Navbar /> 
         <div className='relative z-0'>
           <Body />

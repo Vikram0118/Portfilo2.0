@@ -9,6 +9,10 @@ export default {
       backdropFilter: {
         'blur': 'blur(12px)',
       },
+      colors: {
+        'bgdark':'#171717',
+        'main1' : '#14FFEC',
+      }
     },
   },
   plugins: [],

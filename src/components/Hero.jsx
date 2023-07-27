@@ -16,12 +16,12 @@ const Hero = () => {
       <div className=' z-40 w-fit flex flex-col items-start gap-1'>
         <Reveal delay={0}>
           <p className='text-4xl md:text-7xl lg:text-7xl xl:text-8xl font-sans font-black text-white bg-black px-2 md:px-0 py-2 md:py-0 sm:bg-transparent'>
-            Hi, I'm <span className='text-yellow-300'>V</span>ikram<span className='text-yellow-300'>.</span>
+            Hi, I'm <span className='text-main1'>V</span>ikram<span className='text-main1'>.</span>
           </p>
         </Reveal>
         <Reveal>
-            <p className='text-xl lg:text-3xl xl:text-4xl font-light text-white py-2 px-2 md:px-0 bg-black sm:bg-transparent '>
-              I' m a <span className='text-yellow-300'>Web Developer<span className='text-white'>.  </span></span>
+            <p className='text-xl lg:text-3xl xl:text-5xl font-light text-white py-2 px-2 md:px-0 bg-black sm:bg-transparent '>
+              I' m a <span className='text-main1'>Web Developer<span className='text-white'>.  </span></span>
             </p>
         </Reveal>
         <div className='flex text-white w-fit gap-2 overflow-hidden'>
@@ -29,7 +29,7 @@ const Hero = () => {
             initial={{ x: -30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: 'easeInOut', duration: 1 }}
-            className='hover:text-yellow-300'
+            className='hover:text-main1'
           >
             <a href='https://www.linkedin.com' target='_blank' rel='nofollow'>
               <AiFillLinkedin size='2.4rem' />
@@ -40,7 +40,7 @@ const Hero = () => {
             initial={{ x: 30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: 'easeInOut', duration: 1 }}
-            className='hover:text-yellow-300'
+            className='hover:text-main1'
           >
             <a href='https://www.github.com' target='_blank' rel='nofollow'>
               <AiFillGithub size='2.4rem' />
@@ -53,7 +53,7 @@ const Hero = () => {
           transition={{ ease: 'easeInOut', duration: 1 }} 
           href="https://drive.google.com/file/d/1yl-b2M9iyNzykmHQa9rZYehMzfui_D5n/view?usp=sharing"
           target='_blank'
-          className='appearance-none font-light px-4 py-2 rounded-sm text-yellow-300 border-[1px] border-yellow-300 w-fit mt-4 p-2 pl-5 pr-5 bg-transparent text-lg transition-colors duration-700 transform hover:bg-white hover:border-white hover:text-black focus:border-yellow-300'
+          className='appearance-none font-normal px-4 py-2 rounded-sm text-main1 border-[1px] border-main1 w-fit mt-4 p-2 pl-5 pr-5 bg-transparent text-lg transition-colors duration-700 transform hover:bg-white hover:border-white hover:text-bgdark focus:border-main1'
         >
           Download CV
         </motion.a>
@@ -69,11 +69,11 @@ const Hero = () => {
 
     </div>
 
-      <div className="z-0 absolute top-0 bottom-0 right-0 w-1/3 bg-yellow-300 "></div>
-      <div className="z-0 absolute top-0 bottom-0 right-1/3 w-1 bg-yellow-300 mr-1"></div>
-      <div className="z-0 absolute top-0 bottom-0 right-1/3 w-[3px] bg-yellow-300 mr-3"></div>
-      <div className="z-0 absolute top-0 bottom-0 right-1/3 w-[2px] bg-yellow-300 mr-5"></div>
-      <div className="z-0 absolute top-0 bottom-0 right-1/3 w-[1px] bg-yellow-300 mr-7"></div>
+      <div className="z-0 absolute top-0 bottom-0 right-0 w-1/3 bg-main1 "></div>
+      <div className="z-0 absolute top-0 bottom-0 right-1/3 w-1 bg-main1 mr-1"></div>
+      <div className="z-0 absolute top-0 bottom-0 right-1/3 w-[3px] bg-main1 mr-3"></div>
+      <div className="z-0 absolute top-0 bottom-0 right-1/3 w-[2px] bg-main1 mr-5"></div>
+      <div className="z-0 absolute top-0 bottom-0 right-1/3 w-[1px] bg-main1 mr-7"></div>
 
     </div>
 
