@@ -8,12 +8,12 @@ const Skills = () => {
     <div id='Skills' className='scroll-mt-[120px] max-w-4xl mx-auto my-20 px-5'>
 
       <Reveal>
-        <p className='text-2xl md:text-5xl xl:text-6xl text-white font-extrabold mb-5'>Skills<span className='text-yellow-300'>.</span></p>
+        <p className='text-2xl md:text-5xl xl:text-6xl text-white font-extrabold mb-5'>Skills<span className='text-main1'>.</span></p>
       </Reveal>
 
       <div className='xl:mt-2'>
         <Reveal>
-          <p className='text-base sm:text-xl lg:text-2xl xl:text-3xl text-white font-light'>Things I use <span className='text-yellow-300'>EveryDay</span> </p>
+          <p className='text-base sm:text-xl lg:text-2xl xl:text-3xl text-white font-light'>Things I use <span className='text-main1'>EveryDay</span> </p>
         </Reveal>
         <div className='flex flex-row flex-wrap justify-center gap-5 sm:gap-0'>
           {technologiesAtWork.map((technology) => (
@@ -26,7 +26,7 @@ const Skills = () => {
 
       <div className='xl:mt-5'>
         <Reveal>
-          <p className='text-base sm:text-xl lg:text-2xl xl:text-3xl text-white font-light '>Things I use for <span className='text-yellow-300'>Fun</span> </p>
+          <p className='text-base sm:text-xl lg:text-2xl xl:text-3xl text-white font-light '>Things I use for <span className='text-main1'>Fun</span> </p>
         </Reveal>
         <div className='flex flex-row flex-wrap justify-center gap-5 sm:gap-0'>
         {technologiesForFun.map((technology) => (

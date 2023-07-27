@@ -26,6 +26,14 @@ import todolist1 from './projectpics/todolist1.png'
 import todolist2 from './projectpics/todolist2.png'
 import todolist3 from './projectpics/todolist3.png'
 
+import erp1 from './projectpics/erp1.png'
+import erp2 from './projectpics/erp2.png'
+import erp3 from './projectpics/erp3.png'
+import erp4 from './projectpics/erp4.png'
+import erp5 from './projectpics/erp5.png'
+import erp6 from './projectpics/erp6.png'
+
+
 import menu from './menu.svg'
 import close from './close.svg'
 
@@ -57,6 +65,13 @@ export {
     expense2,
     expense3,
     expense4,
+
+    erp1,
+    erp2,
+    erp3,
+    erp4,
+    erp5,
+    erp6,
 
     menu,
     close

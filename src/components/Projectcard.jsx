@@ -63,7 +63,7 @@ const Projectcard = ({
           <div width="100%">
             <div className=' flex items-center justify-center  gap-5  overflow-hidden'>
               <h4 className="font-bold text-2xl flex-shrink-0">{title}</h4>
-              <div className='w-full h-[1px] bg-yellow-300' />
+              <div className='w-full h-[1px] bg-main1' />
 
               <div ref={ref} className='flex text-white gap-2 '>
                 {projectLink ? 
@@ -75,27 +75,29 @@ const Projectcard = ({
                     initial='initial'
                     animate={controls}
                     transition={{ease:'easeInOut', duration: 1 }}
-                    className='hover:text-yellow-300'
+                    className='hover:text-main1'
                   >
                     <a href={projectLink} target="_blank" rel="nofollow">
                       <AiOutlineExport size="2.4rem" />
                     </a>
                   </motion.span> : null }
 
-              <motion.span
-                variants={{
-                  initial:{ x: 30, opacity: 0 },
-                  visible:{ x: 0, opacity: 1 },
-                }}
-                initial='initial'
-                animate={controls}
-                transition={{ease:'easeInOut', duration: 1 }}
-                className='hover:text-yellow-300'
-              >
-                <a href={code} target="_blank" rel="nofollow">
-                  <AiFillGithub size="2.4rem" />
-                </a>
-              </motion.span>
+                  {code ?
+                    <motion.span
+                    variants={{
+                      initial:{ x: 30, opacity: 0 },
+                      visible:{ x: 0, opacity: 1 },
+                    }}
+                    initial='initial'
+                    animate={controls}
+                    transition={{ease:'easeInOut', duration: 1 }}
+                    className='hover:text-main1'
+                    >
+                      <a href={code} target="_blank" rel="nofollow">
+                        <AiFillGithub size="2.4rem" />
+                      </a>
+                    </motion.span>
+                  : null}
 
             </div>
 
@@ -114,7 +116,7 @@ const Projectcard = ({
           <div>
             <p className='font-extralight text'>
               {description}{" "}<br />
-              <span onClick={() => setIsOpen(true)} className="text-yellow-300 cursor-pointer">Learn more {">"}</span>
+              <span onClick={() => setIsOpen(true)} className="text-main1 cursor-pointer">Learn more {">"}</span>
             </p>
           </div>
         </div>

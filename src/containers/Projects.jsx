@@ -1,14 +1,12 @@
 import { Projectcard } from "../components";
 import {Reveal} from '../utils'
-
-import profilepic from '../assets/Profilepic.jpg';
-import {expense1, expense2, expense3, expense4, neura1, neura2, neura3, todolist1, todolist2, todolist3} from '../assets'
+import {expense1, expense2, expense3, expense4, neura1, neura2, neura3, todolist1, todolist2, todolist3, erp1, erp2, erp3, erp4, erp5, erp6} from '../assets'
 
 const Projects = () => {
   return (
     <section className="max-w-5xl mx-auto my-20 scroll-mt-24 px-5" id="projects">
       <Reveal>
-        <p className='text-2xl md:text-5xl xl:text-6xl font-extrabold text-white py-2'>Projects<span className='text-yellow-300'>.</span></p>
+        <p className='text-2xl md:text-5xl xl:text-6xl font-extrabold text-white py-2'>Projects<span className='text-main1'>.</span></p>
       </Reveal>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mt-10'>
@@ -29,15 +27,15 @@ const projects = [
     tech: [
       {
         name: "React",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
       {
         name: "Framer",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
       {
         name: "Tailwind",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
     ],  
     description: "A national-level technical symposium, providing participants from various colleges across Puducherry and India with event details.",
@@ -56,49 +54,33 @@ const projects = [
   },
   {
     title: "ERP",
-    imgSrc: [profilepic, profilepic, profilepic, profilepic],
-    code: "https://www.github.com",
+    imgSrc: [erp1, erp2, erp3, erp4, erp5, erp6],
+    // code: "https://www.github.com",
     tech: [
       {
         name: "PHP",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
       {
         name: "MySQL",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
       {
         name: "JS",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
     ],      
-    description:"A social community for painters to connect with others in their community. I handle everything backend (50K monthly active users).",
+    description:"An ERP system for the college's Office of Controller of Examination, automating student enrollment, course registration, and exam registration.",
     modalContent: (
       <>
         <p>
-          The Canvas Club is a social community for painters to connect with
-          others in their community.
+        The created website serves as an ERP (Enterprise Resource Planning) system tailor-made for the Office of Controller of Examination in the college. Its primary function is to streamline and automate various processes related to student enrollment and academic course management.
         </p>
         <p>
-          I work primarily on the backend, a collection of Node & Express
-          microservices. Data is stored primarily in Postgres & cached in Redis.
+          This ERP offers features such as automated student enrollment, institution email ID generation, merit-based Honor/Minor program allotment, timestamp-based Open Elective Course allotment, semester-wise course registration (including 0 credit courses), and end-of-semester exam registration.
         </p>
         <p>
-          The team in total consists of 5 developers. This is a passion project
-          for all of us.
-        </p>
-        <p>
-          Because this isn&apos;t real, here&apos;s some gibberish to fill space{" "}
-          {":)"}
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+        Overall, the PHP-based ERP system optimizes the administrative tasks of the Office of Controller of Examination, reduces manual efforts, minimizes errors, and enhances the overall efficiency of academic operations in the college. Its user-friendly interface and automation features make it an indispensable tool for managing the complex processes involved in student enrollment and academic course administration.
         </p>
       </>
     ),
@@ -112,15 +94,15 @@ const projects = [
     tech: [
       {
         name: "React",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
       {
         name: "CSS",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
       {
         name: "HTML",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
     ],  
     description:"A sleek and efficient To-Do List built with React and CSS, for organizing tasks efficiently with a user-friendly interface.",
@@ -144,15 +126,15 @@ const projects = [
     tech: [
       {
         name: "React",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
       {
         name: "Tailwind",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
       {
         name: "Context API",
-        color: "text-yellow-300",
+        color: "text-main1",
       },
     ],  
     description:"A user-friendly and visually appealing web application which enables effortless expense tracking and budget management.",
