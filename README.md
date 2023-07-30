@@ -4,7 +4,7 @@ Build using React JS, Framer Motion, Tailwind CSS, Three JS.
 The Portfolio website features my Skills and Projects.
 
 
-![preview one ](https://github.com/Vikram0118/Portfilo2.0/assets/119684255/f60b98c3-f6b8-4ed0-b06f-0c47f8236486)
+![preview one ](https://github.com/Vikram0118/Portfilo2.0/assets/119684255/f1d4c5c1-ac8a-43d6-a66e-6b8feed72d8a)
 
 ![preview two](https://github.com/Vikram0118/Portfilo2.0/assets/119684255/8cc2e3fd-7653-497a-824c-d89b4d98767a)
 
