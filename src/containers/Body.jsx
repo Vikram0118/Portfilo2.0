@@ -2,15 +2,26 @@ import React from 'react'
 import {Aboutjson, Hero} from '../components'
 import {Skills, Contact, Projects} from '../containers'
 
-const Body = () => {
+const Body = ({mainColor, setMainColor}) => {
   
   return (
     <>
-      <Hero />
-      <Aboutjson />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Hero
+        mainColor={mainColor}
+        setMainColor={setMainColor}
+      />
+      <Aboutjson
+        mainColor={mainColor}
+      />
+      <Skills 
+        mainColor={mainColor}
+      />
+      <Projects
+        mainColor={mainColor}
+      />
+      <Contact 
+        mainColor={mainColor}
+      />
     </>
     )
 }

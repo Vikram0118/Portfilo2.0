@@ -21,10 +21,10 @@ const Aboutjson = () => {
   }, [isInView, mainControls, slideControls]);
 
   return (
-    <div id='AboutMe' className='scroll-mt-24 max-w-4xl mx-auto mb-20 mt-32 px-'>
+    <div id='AboutMe' className='scroll-mt-20 max-w-4xl mx-auto mb-28 mt-32 px-'>
       <div className=' w-full rounded-t-md p-2'>
         <Reveal>
-          <p className='text-2xl md:text-5xl xl:text-6xl text-white font-extrabold mb-5'>About_me<span className='text-main1'>.json</span></p>
+          <p className='text-2xl md:text-5xl xl:text-6xl text-white font-extrabold mb-3'>About_me<span className='text-main1'>.json</span></p>
         </Reveal>
       </div>
       <motion.div 
@@ -37,10 +37,10 @@ const Aboutjson = () => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.75 }}
-        className=' flex flex-col h-auto  text-white bg-opacity-50 backdrop-filter backdrop-blur-lg bg-black px-4 sm:p-4 rounded-lg '>
-          <div className='flex flex-col gap-2 px-3 py-2 text-base sm:text-xl lg:text-2xl font-extralight'>
-              <p className='font-light text-2xl md:text-4xl text-yellow-500'>&#123;</p>
-              <div className='flex flex-col gap-2 pl-10'>
+        className=' flex flex-col h-auto  text-white bg-opacity-50 backdrop-filter backdrop-blur-lg bg-black px-4 sm:p-2 rounded-lg '>
+          <div className='flex flex-col gap-2 px-3 py-2 text-base md:text-xl font-extralight'>
+              <p className='font-light text-2xl md:text-3xl text-yellow-500'>&#123;</p>
+              <div className='flex flex-col gap-1 pl-10'>
                   <p><span className='text-red-500'>"name"</span> : <span className='text-green-400'>"Vikram P" <span className='text-white'>,</span></span></p>
                   <p><span className='text-red-500'>"title"</span> : <span className='font-light text-pink-600'>[</span>  <br/>
                     <span className='pl-10 text-green-400'>"Web developer" <span className='text-white'>,</span></span> <br/>
@@ -57,7 +57,7 @@ const Aboutjson = () => {
                   <p className='font-light text-pink-600'>&#125;</p>
                   </p>
               </div>
-              <p className='font-light text-2xl md:text-4xl text-yellow-500'>&#125;</p>
+              <p className='font-light text-2xl md:text-3xl text-yellow-500'>&#125;</p>
           </div>
 
       </motion.div>
