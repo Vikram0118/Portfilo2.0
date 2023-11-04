@@ -30,6 +30,14 @@ const Hero = () => {
               I' m a <span className='text-main1'>Web Developer<span className='text-white'>.  </span></span>
             </p>
         </Reveal>
+        {/* <div className='flex gap-2'>
+            <p className='text-xl font-light text-white py-2 px-2 md:px-0 bg-black sm:bg-transparent '>React -</p>
+            <p className='text-xl font-light text-white py-2 px-2 md:px-0 bg-black sm:bg-transparent '>Tailwind CSS -</p>
+            <p className='text-xl font-light text-white py-2 px-2 md:px-0 bg-black sm:bg-transparent '>Framer -</p>
+            <p className='text-xl font-light text-white py-2 px-2 md:px-0 bg-black sm:bg-transparent '>Django -</p>
+            <p className='text-xl font-light text-white py-2 px-2 md:px-0 bg-black sm:bg-transparent '>AWS -</p>
+            <p className='text-xl font-light text-white py-2 px-2 md:px-0 bg-black sm:bg-transparent '>DS Algo</p>
+        </div> */}
         <div className='flex text-white w-fit gap-2 overflow-hidden'>
           <motion.span
             initial={{ x: -30, opacity: 0 }}
@@ -57,7 +65,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ ease: 'easeInOut', duration: 1 }} 
-          href="https://drive.google.com/file/d/1sjna7vMiKka5tEYHHLRBZCS-BSYRufzK/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Uqy_x9mejfa8AIcmBhImShVySmO5FGVw/view?usp=sharing"
           target='_blank'
           className='appearance-none font-normal px-4 py-2 rounded-sm text-main1 border-[1px] border-main1 w-fit mt-4 p-2 pl-5 pr-5 bg-transparent text-lg transition-colors duration-700 transform hover:bg-white hover:border-white hover:text-bgdark focus:border-main1'
         >
