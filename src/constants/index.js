@@ -25,8 +25,8 @@ export const navLinks = [
   },
   {
     id: "projects",
-    title: "Projects",
-  },
+    title: "Projects"
+  }
 ];
 
 const technologiesAtWork = [

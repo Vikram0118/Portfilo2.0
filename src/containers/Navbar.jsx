@@ -66,6 +66,15 @@ const Navbar = () => {
                   <a href={`#${link.id}`} className='hover:text-main1 text-white'>{link.title}</a>
                 </motion.li>
               ))}
+              <motion.li 
+                  key="blog" 
+                  initial={{ y: 70 }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className='inline-block'
+                >
+                  <a href="https://blog-vikrampalani.vercel.app/" target="_blank" rel="nofollow" className='hover:text-main1 text-white'>Blog</a>
+                </motion.li>
             </ul>
           </div>
           {/* mobile nav bar menu */}
@@ -88,6 +97,11 @@ const Navbar = () => {
                       <a href={`#${link.id}`}>{link.title}</a>
                     </li>
                   ))}
+                  <li key="blog" className='hover:text-white text-xl font-extralight cursor-pointer' onClick = {() => { 
+                    setToggle(!toggle)
+                    }}>
+                    <a href="https://blog-vikrampalani.vercel.app/">Blog</a>
+                  </li>
                 </ul>
               </motion.div>
             )}
